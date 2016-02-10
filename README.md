@@ -13,5 +13,8 @@ This is a WebRTC web app which can be used to outsource audio recording for spok
 <p>![alt tag](https://github.com/abhijayghildyal/Audio-Recording-App-AngularJS-NodeJS/blob/master/webRTC-nodeJS-soundRecorder/images/4.png)
 <p>![alt tag](https://github.com/abhijayghildyal/Audio-Recording-App-AngularJS-NodeJS/blob/master/webRTC-nodeJS-soundRecorder/images/5.png)
 
+<p>
+Developers- Abhijay Ghildyal, Sanket Lokegaonkar.
+
 For more experiments on WebRTC: <p>
 https://github.com/muaz-khan/WebRTC-Experiment
