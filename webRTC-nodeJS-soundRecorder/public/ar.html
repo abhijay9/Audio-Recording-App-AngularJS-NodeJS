@@ -1,0 +1,84 @@
+<html>
+<head>
+   <title>Angular JS Views</title>
+   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/font-awesome.css">
+  <link rel="stylesheet" href="style/ospb.css">
+  <link rel="stylesheet" href="style/horizontal.css">
+  
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script src="js/Horizontal examples - Sly_files/ga.js"></script>
+  <script src="js/Horizontal examples - Sly_files/modernizr.js"></script>
+  
+  
+  <script src="js/RecordRTC.js"></script>
+  
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+   <script src="js/arController.js"></script>
+   
+   
+</head>
+<body>
+   <script type="text/javascript">
+    var newSeq=[],sequence_arr=[],time_arr=[],sentence_arr=[], difftime=[],timesecond_arr=[];
+    var finaltime;
+    var sentence_arrIterator,sequence_arrIterator,timesecond_arrIterator,realIterator;
+    var blobArray=[];
+    var CCOUNT = 60;
+    var flag=0;
+    var t, count;
+   </script>
+
+   <h2>Recorder</h2>
+   <div ng-app="mainApp">
+      <b><i><a href="#addSrt">Load SRT</a></i></b>
+      <p><b><i><a href="#viewRecorder">View Recorder</a></b></i>
+      <div ng-view></div>
+      <script type="text/ng-template" id="addSrt.htm">
+         <h2> Load SRT </h2>
+         <input type="file" onchange="angular.element(this).scope().srtChange()" >
+         {{message}}
+         
+      </script>
+      
+      <script type="text/ng-template" id="viewRecorder.htm">
+         
+         <h2> Sound Recorder </h2>	    
+         {{message}}
+
+         <div id="firstDiv" class="pagespan container" ng-init="init()">
+            <div class="wrap">
+               <h2>Centered <small>- activated or middle item is centered when possible</small></h2>
+
+                  <div class="scrollbar">
+                     <div class="handle" style="transform: translateZ(0px) translateX(76px); width: 190px;">
+                        <div class="mousearea"></div>
+                     </div>
+                  </div>
+                  
+                  {{seqArr}}
+               <div  class="frame" id="centered" style="overflow: hidden;" >
+                  <ul id="seqNum" class="clearfix" style="transform: translateZ(0px) translateX(-455px); width: 6840px;">
+               
+                     <li ng-repeat="seq in seqArr track by $index" ng-click="liClicked($index)"> 
+                        {{$index}}
+                     </li>
+                  </ul>
+               </div>
+               <button class=
+               
+               <div class="controls center">
+                  <button class="btn prev"><i class="icon-chevron-left"></i> prev</button>
+                  <button class="btn next">next <i class="icon-chevron-right"></i></button>
+               </div>
+            </div>      
+         </div>
+         </div>   
+
+      </script>
+      
+   </div>
+</body>
+</html>
