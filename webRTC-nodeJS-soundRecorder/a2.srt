@@ -1,0 +1,604 @@
+1
+00:00:01 --> 00:00:04
+Welcome to the spoken tutorial on First C program.
+
+2
+00:00:05 --> 00:00:07
+In this tutorial, we  will learn
+
+3
+00:00:08 --> 00:00:10
+*How to write a simple C program
+
+4
+00:00:11 --> 00:00:12
+*How to compile it
+
+5
+00:00:13 --> 00:00:14
+*How to execute it
+
+6
+00:00:15 --> 00:00:18
+We will also explain some common errors and their solutions.
+
+7
+00:00:19 --> 00:00:21
+To record this tutorial, I am using
+
+8
+00:00:22 --> 00:00:30
+Ubuntu operating system version 11.10 and gcc Compiler version 4.6.1 on Ubuntu.
+
+9
+00:00:31 --> 00:00:32
+To practice this tutorial,
+
+10
+00:00:33 --> 00:00:37
+You should be familiar with Ubuntu Operating System and an Editor.
+
+11
+00:00:38 --> 00:00:41
+Some editors are vim and gedit.
+
+12
+00:00:42 --> 00:00:44
+I will use 'gedit' in this tutorial.
+
+13
+00:00:45 --> 00:00:50
+For relevant tutorials please visit our website which is as shown. http://spoken-tutorial.org
+
+14
+00:00:51 --> 00:00:54
+Let me tell you how to write a C program through an example.
+
+15
+00:00:55 --> 00:01:06
+Open the terminal window  by pressing Ctrl, Alt and T keys simultaneously on your keyboard.
+
+16
+00:01:07 --> 00:01:11
+Now let's open the text editor. So, at the prompt, type
+
+17
+00:01:12 --> 00:01:19
+“gedit” space “talk” dot “c” space “&” sign.
+
+18
+00:01:20 --> 00:01:23
+We use ampersand (&) to free up the prompt.
+
+19
+00:01:24 --> 00:01:29
+Please note that all the C files will  have  extension  “.c”(dot C).
+
+20
+00:01:30 --> 00:01:31
+Now Press Enter,
+
+21
+00:01:32 --> 00:01:35
+the text editor has opened.
+
+22
+00:01:36 --> 00:01:38
+Let us start to write a program.
+
+23
+00:01:39 --> 00:01:41
+Type double slash “//” space
+
+24
+00:01:42 --> 00:01:47
+“My first C program”.
+
+25
+00:01:48 --> 00:01:51
+Here, double slash is used to comment the line.
+
+26
+00:01:52 --> 00:01:55
+Comments are used to understand the flow of program.
+
+27
+00:01:56 --> 00:01:57
+It is useful for documentation.
+
+28
+00:01:58 --> 00:02:00
+It gives us information about the program.
+
+29
+00:02:01 --> 00:02:06
+The double slash is called as single line comment.
+
+30
+00:02:07 --> 00:02:08
+Now press Enter.
+
+31
+00:02:09 --> 00:02:16
+Type (hash) “#include” space opening bracket , closing bracket.
+
+32
+00:02:17 --> 00:02:23
+It is always a good practice to complete the brackets first, and then start writing inside it.
+
+33
+00:02:24 --> 00:02:29
+Now  Inside the bracket, type“stdio” “(dot).” “h” .
+
+34
+00:02:30 --> 00:02:32
+stdio.h is a header file.
+
+35
+00:02:33 --> 00:02:40
+A program must contain this header file when it uses standard input/output  functions.
+
+36
+00:02:41 --> 00:02:42
+Now press Enter.
+
+37
+00:02:43 --> 00:02:49
+type “int” space “main” opening bracket, closing bracket.
+
+38
+00:02:50 --> 00:02:51
+main is a special function.
+
+39
+00:02:52 --> 00:02:57
+It denotes that the execution of the program begins from this line.
+
+40
+00:02:58 --> 00:03:03
+The opening bracket and closing bracket is called as parenthesis.
+
+41
+00:03:04 --> 00:03:10
+Parenthesis followed by main is to tell the user that main is a function.
+
+42
+00:03:11 --> 00:03:14
+Here the int main function takes no arguments.
+
+43
+00:03:15 --> 00:03:17
+It returns a value of type integer.
+
+44
+00:03:18 --> 00:03:22
+We will learn about data types in another tutorial.
+
+45
+00:03:23 --> 00:03:28
+Now  Let us switch to the slides to know more about  main function. Let us go to the next slide.
+
+46
+00:03:29 --> 00:03:32
+Every program should have one main() function.
+
+47
+00:03:33 --> 00:03:35
+There should NOT be more than one main function.
+
+48
+00:03:36 --> 00:03:40
+Otherwise the compiler cannot locate the beginning of the program.
+
+49
+00:03:41 --> 00:03:45
+The empty pair of parentheses indicates that main has no arguments.
+
+50
+00:03:46 --> 00:03:51
+The concept of arguments will be discussed in detail in the upcoming tutorials.
+
+51
+00:03:52 --> 00:03:54
+Now let us come back to our program.
+
+52
+00:03:55 --> 00:03:57
+Press Enter.
+
+53
+00:03:58 --> 00:03:59
+Type opening curly bracket “{”.
+
+54
+00:04:00 --> 00:04:03
+The opening curly bracket marks the beginning of the function main.
+
+55
+00:04:04 --> 00:04:07
+Then  Type  closing curly  bracket “}”.
+
+56
+00:04:08 --> 00:04:12
+The closing curly bracket indicates the end of the function main.
+
+57
+00:04:13 --> 00:04:15
+Now Inside the bracket   press Enter twice,
+
+58
+00:04:16 --> 00:04:19
+move the cursor one line up.
+
+59
+00:04:20 --> 00:04:22
+Indentation makes the code easier to read.
+
+60
+00:04:23 --> 00:04:24
+It also helps to locate errors faster.
+
+61
+00:04:25 --> 00:04:28
+So let us give three space here
+
+62
+00:04:29 --> 00:04:33
+And  Type “printf”  opening bracket closing bracket “()” .
+
+63
+00:04:34 --> 00:04:38
+printf is a standard C function to print the output on the terminal.
+
+64
+00:04:39 --> 00:04:42
+Here, inside the brackets, within the double quotes.
+
+65
+00:04:43 --> 00:04:49
+Anything within the double quotes, in the printf statement, will be printed on the terminal.
+
+66
+00:04:50 --> 00:04:58
+Type“Talk To a Teacher backslash n”.
+
+67
+00:04:59 --> 00:05:02
+Backslash n “\n” signifies newline.
+
+68
+00:05:03 --> 00:05:09
+As a result, after execution of the printf function, the cursor moves to the new line.
+
+69
+00:05:10 --> 00:05:14
+Every C statement must end with a semicolon “;”.
+
+70
+00:05:15 --> 00:05:18
+Hence, type it at the end of this line.
+
+71
+00:05:19 --> 00:05:23
+Semicolon acts as a statement terminator.
+
+72
+00:05:24 --> 00:05:26
+Now press Enter give three space here.
+
+73
+00:05:27 --> 00:05:33
+And type “return” space “0” and a semicolon.
+
+74
+00:05:34 --> 00:05:37
+This statement returns the integer zero.
+
+75
+00:05:38 --> 00:05:44
+An integer has to be returned for this function because the function type is int.
+
+76
+00:05:45 --> 00:05:50
+The return statement marks the end of executable statements.
+
+77
+00:05:51 --> 00:05:54
+We will learn more about the returned values in another tutorial.
+
+78
+00:05:55 --> 00:05:59
+Now click on"Save" button to save the file.
+
+79
+00:06:00 --> 00:06:02
+It is a good habit to save files frequently.
+
+80
+00:06:03 --> 00:06:04
+This will protect you from sudden power failures.
+
+81
+00:06:05 --> 00:06:09
+It will also be useful in case the applications were to crash.
+
+82
+00:06:10 --> 00:06:14
+Let  us now compile the program, come back to a  terminal.
+
+83
+00:06:15 --> 00:06:23
+Type “gcc” space “talk.c” space hyphen “-o” space “myoutput”,
+
+84
+00:06:24 --> 00:06:26
+gcc is the compiler,
+
+85
+00:06:27 --> 00:06:29
+talk.c is our filename .
+
+86
+00:06:30 --> 00:06:36
+-o myoutput says that the executable should go to the file myoutput.
+
+87
+00:06:37 --> 00:06:38
+Now Press Enter.
+
+88
+00:06:39 --> 00:06:41
+We see that the program is compiled.
+
+89
+00:06:42 --> 00:06:53
+By typing ls space (hypen) -lrt, we can see that myoutput is the last file to be created.
+
+90
+00:06:54 --> 00:07:00
+To execute the program, type (dot slash)“./myoutput” , press Enter.
+
+91
+00:07:01 --> 00:07:05
+Here the output is displayed as “Talk To a Teacher”.
+
+92
+00:07:06 --> 00:07:09
+As I said before, return is the last statement to be executed.
+
+93
+00:07:10 --> 00:07:14
+Thus, after the return statement nothing will be executed. Let us try it out.
+
+94
+00:07:15 --> 00:07:16
+come back to our program.
+
+95
+00:07:17 --> 00:07:21
+After the return statement, let us include one more printf statement,
+
+96
+00:07:22 --> 00:07:26
+give space here, type printf opening bracket, closing bracket.
+
+97
+00:07:27 --> 00:07:34
+Inside the bracket within the double quotes type Welcome backslash n ,  at the end type a semicolon.
+
+98
+00:07:35 --> 00:07:36
+Now click on   save.
+
+99
+00:07:37 --> 00:07:40
+Let us compile  and execute come back to our terminal.
+
+100
+00:07:41 --> 00:07:45
+you can recall the previously entered commands by using up arrowkey.
+
+101
+00:07:46 --> 00:07:50
+That is what I did now.
+
+102
+00:07:51 --> 00:07:57
+We see that the second  statement  welcome is  not executed.
+
+103
+00:07:58 --> 00:07:59
+Now come back to our program.
+
+104
+00:08:00 --> 00:08:05
+Let us write the 'Welcome' statement above the return statement.
+
+105
+00:08:06 --> 00:08:08
+Click on  Save.
+
+106
+00:08:09 --> 00:08:14
+Let us compile and execute.
+
+107
+00:08:15 --> 00:08:22
+We see that the second printf statement welcome has also been executed.
+
+108
+00:08:23 --> 00:08:28
+Now let us see the common errors which we can come across.  Come back to our program.
+
+109
+00:08:29 --> 00:08:35
+Suppose here I  will miss the dot in “stdio.h”, click on Save.
+
+110
+00:08:36 --> 00:08:40
+Let us  compile and execute .
+
+111
+00:08:41 --> 00:08:41
+We see that
+
+112
+00:08:42 --> 00:08:47
+there is a fatal error  at line no.2 in our talk.c file.
+
+113
+00:08:48 --> 00:08:58
+The compiler cannot find a header file with the name “stdioh”. Hence it is giving an error "no such file or directory".
+
+114
+00:08:59 --> 00:09:02
+And the compilation is terminated.
+
+115
+00:09:03 --> 00:09:10
+Let us  now fix the error come back to a  program. Reinsert the dot “.”, click on Save.
+
+116
+00:09:11 --> 00:09:18
+Let us compile and  execute. Yes, it is working.
+
+117
+00:09:19 --> 00:09:21
+I will show you another common error.
+
+118
+00:09:22 --> 00:09:24
+Let us switch back to the program.
+
+119
+00:09:25 --> 00:09:30
+Now, suppose here I will miss the semicolon  at the end of the line.
+
+120
+00:09:31 --> 00:09:40
+Click on  Save. Let us compile and execute.
+
+121
+00:09:41 --> 00:09:50
+We see that there is  an error at line no.6 in our talk.c file. that "expected ';' (semicolon) before 'printf'".
+
+122
+00:09:51 --> 00:09:53
+Come back to our program.
+
+123
+00:09:54 --> 00:09:57
+As I said before, semicolon acts as a statement terminator.
+
+124
+00:09:58 --> 00:10:05
+So it will search for it at the end of the line.5 and at the beginning of the  line.6.
+
+125
+00:10:06 --> 00:10:08
+This is line 6.
+
+126
+00:10:09 --> 00:10:11
+This is the last place where you can put the semicolon.
+
+127
+00:10:12 --> 00:10:17
+Recall that the compiler also gives the error message on line 6.
+
+128
+00:10:18 --> 00:10:22
+Let us try what happens if we put the semicolon here.
+
+129
+00:10:23 --> 00:10:25
+Click on Save .
+
+130
+00:10:26 --> 00:10:29
+Let us Compile and execute.
+
+131
+00:10:30 --> 00:10:31
+Yes, it is working.
+
+132
+00:10:32 --> 00:10:39
+Now come back to our program. Let us type the semicolon here at the end of this line
+
+133
+00:10:40 --> 00:10:45
+as it is a conventional practice to type  the semicolon at the end of the line.
+
+134
+00:10:46 --> 00:10:48
+Now click on Save.
+
+135
+00:10:49 --> 00:10:53
+Let us Compile and execute. Yes it is working.
+
+136
+00:10:54 --> 00:10:56
+Now let us go back to our slides.
+
+137
+00:10:57 --> 00:10:58
+As an Assignment
+
+138
+00:10:59 --> 00:11:01
+Write a program to print "Welcome to the World of C"
+
+139
+00:11:02 --> 00:11:07
+See what happens if  “\n” is not included in the printf statement.
+
+140
+00:11:08 --> 00:11:11
+This brings us to the end of this tutorial.
+
+141
+00:11:12 --> 00:11:14
+Watch the video available at the link shown below,
+
+142
+00:11:15 --> 00:11:17
+It summarises the Spoken Tutorial project.
+
+143
+00:11:18 --> 00:11:21
+If you do not have good bandwidth, you can download and watch it.
+
+144
+00:11:22 --> 00:11:23
+The Spoken Tutorial Project Team
+
+145
+00:11:24 --> 00:11:27
+Conducts workshops using spoken tutorials.
+
+146
+00:11:28 --> 00:11:30
+Gives certificates to those who pass an online test.
+
+147
+00:11:31 --> 00:11:37
+For more details, please write to contact [at] spoken hyphen tutorial dot org
+
+148
+00:11:38 --> 00:11:41
+Spoken Tutorial Project is a part of the Talk to a Teacher project.
+
+149
+00:11:42 --> 00:11:46
+It is supported by the National Mission on Education through ICT, MHRD, Government of India.
+
+150
+00:11:47 --> 00:11:50
+More information on this Mission is available at   the link shown below:
+
+151
+00:11:51 --> 00:11:56
+This is Ashwini Patil from IIT Bombay signing off. Thank you for watching.
+
